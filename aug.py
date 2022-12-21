@@ -290,16 +290,9 @@ class TUDataset_aug(InMemoryDataset):
                 assert False
 
         elif self.aug == 'all1':
-            test = RWSample()
-            data_aug = test.do_trans(subgraph2(mask_nodes(permute_edges(drop_nodes(deepcopy(data))))))
-            subgraph2( mask_nodes(permute_edges(drop_nodes(deepcopy(data)))))
-        elif self.aug == 'all2':
             test=Diffusion()
             data_aug =test.do_trans(subgraph2( mask_nodes(permute_edges(drop_nodes(deepcopy(data))))))
-        elif self.aug == 'all3':
-            test=Diffusion()
-            test2=RWSample()
-            data_aug =test.do_trans(test2.do_trans(subgraph2( mask_nodes(permute_edges(drop_nodes(deepcopy(data)))))))
+
 
 
 
