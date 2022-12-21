@@ -46,19 +46,18 @@ For easy negative GCL-NoAug, run the following script
 ./go_beta_2.sh $GPU_ID $DATASET_NAME random4 0.1
 ```
 
+For GCL-AllAug-Diffusion, run the following script
+```
+python gsimclr.py --DS NCI1 --lr 0.01 --local --num-gc-layers 3 --aug all1 --seed 1
+```
+
+
 ## t-SNE Visualization
 
 To run t-SNE visulization, run the following script 
 ```
 python gsimclr_tsne.py $GPU_ID $DATASET_NAME random4 0.1
 ```
-
-## New Augmentation
-To run expriments with new augmentation, run the following script
-```
-python gsimclr.py --DS NCI1 --lr 0.01 --local --num-gc-layers 3 --aug all1 --seed 1
-```
-
 
 
 ## Acknowledgements
